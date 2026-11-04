@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState, type FormEvent } from "react";
 
-const API = (import.meta.env.VITE_API_BASE_URL as string | undefined) || "http://127.0.0.1:8000/api";
+const API = (import.meta.env.VITE_API_BASE_URL as string | undefined) || "https://erp2.stride-events.net/api";
 const APP_URL = (import.meta.env.VITE_BAKERY_APP_URL as string | undefined) || "";
 type Bakery = { id: number; name: string; slug: string; is_active: boolean; created_at: string };
 type BUser = { id: string; email: string; full_name: string; employee_code: string; role: string; is_active: boolean };
