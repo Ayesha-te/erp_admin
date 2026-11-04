@@ -1,0 +1,22 @@
+:root{--ink:#14213d;--bg:#f4f1ea;--card:#fff;--line:#e3ddd0;--accent:#0f766e;--accent2:#115e59;--warn:#b45309;--bad:#b91c1c;font-family:"DM Sans","Segoe UI",system-ui,sans-serif;color:var(--ink)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg)}
+.login{min-height:100vh;display:grid;place-items:center;padding:24px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:28px;box-shadow:0 10px 30px rgba(20,33,61,.08)}
+.login .panel{width:100%;max-width:380px}
+h1{margin:0 0 4px;font-size:22px}h2{margin:0 0 14px;font-size:17px}.muted{color:#6b6f7b;font-size:13px}
+label{display:block;font-size:12px;font-weight:600;margin:12px 0 4px}
+input{width:100%;padding:9px 11px;border:1px solid var(--line);border-radius:8px;font:inherit;background:#fff}
+input:focus{outline:2px solid var(--accent);border-color:transparent}
+button{font:inherit;cursor:pointer;border-radius:8px;border:1px solid var(--line);background:#fff;padding:8px 13px}
+button.primary{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600}button.primary:hover{background:var(--accent2)}
+button.danger{color:var(--bad)}button:disabled{opacity:.6;cursor:wait}
+.err{background:#fef2f2;color:var(--bad);border:1px solid #fecaca;border-radius:8px;padding:8px 10px;font-size:13px;margin-top:12px}
+.ok{background:#ecfdf5;color:#065f46;border:1px solid #a7f3d0;border-radius:8px;padding:10px 12px;font-size:14px;margin-bottom:14px}
+.top{display:flex;justify-content:space-between;align-items:center;padding:14px 28px;background:var(--ink);color:#fff}
+.top b{font-size:16px;letter-spacing:.3px}.top button{background:transparent;color:#fff;border-color:#ffffff55}
+.wrap{max-width:1100px;margin:24px auto;padding:0 20px;display:grid;grid-template-columns:1fr 340px;gap:20px;align-items:start}
+@media(max-width:860px){.wrap{grid-template-columns:1fr}}
+table{width:100%;border-collapse:collapse;font-size:14px}th{text-align:left;font-size:12px;color:#6b6f7b;padding:8px;border-bottom:1px solid var(--line)}td{padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
+code{background:#f1ede2;padding:2px 6px;border-radius:5px;font-size:13px}
+.badge{font-size:11px;font-weight:700;padding:3px 8px;border-radius:99px}.on{background:#d1fae5;color:#065f46}.off{background:#fee2e2;color:var(--bad)}
+.actions{display:flex;gap:6px;flex-wrap:wrap}.actions button{padding:5px 9px;font-size:12px}
